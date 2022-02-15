@@ -31,6 +31,7 @@
 		7DA6E0E7274F919A009F5C37 /* UIScrollView+MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA6E0C8274F915A009F5C37 /* UIScrollView+MulticastDelegate.swift */; };
 		7DA6E0E8274F919A009F5C37 /* UINavigationController+MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA6E0C7274F915A009F5C37 /* UINavigationController+MulticastDelegate.swift */; };
 		7DA9B01A27439FA100284B0F /* UIControl+EventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9B01927439FA100284B0F /* UIControl+EventHandling.swift */; };
+		EDAD003727BC07CE0082252B /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAD003627BC07CE0082252B /* TestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		7DA6E0C7274F915A009F5C37 /* UINavigationController+MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+MulticastDelegate.swift"; sourceTree = "<group>"; };
 		7DA6E0C8274F915A009F5C37 /* UIScrollView+MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+MulticastDelegate.swift"; sourceTree = "<group>"; };
 		7DA9B01927439FA100284B0F /* UIControl+EventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+EventHandling.swift"; sourceTree = "<group>"; };
+		EDAD003627BC07CE0082252B /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 		7DA9B01727439F8400284B0F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EDAD003527BC07A50082252B /* TableView */,
 				7D7338D5274269DF004D7E59 /* Resize */,
 				7D05F31C2741364500EBDBB1 /* Root */,
 			);
@@ -277,6 +280,14 @@
 				7DA9B01927439FA100284B0F /* UIControl+EventHandling.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EDAD003527BC07A50082252B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				EDAD003627BC07CE0082252B /* TestTableViewController.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D05F3052741359800EBDBB1 /* AppDelegate.swift in Sources */,
+				EDAD003727BC07CE0082252B /* TestTableViewController.swift in Sources */,
 				7DA9B01A27439FA100284B0F /* UIControl+EventHandling.swift in Sources */,
 				7D05F3242741371400EBDBB1 /* RootViewController.swift in Sources */,
 				7D7338D4274269A3004D7E59 /* ResizeViewController.swift in Sources */,

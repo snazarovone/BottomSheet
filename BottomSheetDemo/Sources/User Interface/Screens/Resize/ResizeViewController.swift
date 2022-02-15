@@ -40,6 +40,13 @@ final class ResizeViewController: UIViewController {
         return button
     }()
     
+    private let tableButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .systemPink
+        button.setTitle("Show tableView", for: .normal)
+        return button
+    }()
+    
     private let _scrollView = UIScrollView()
     
     // MARK: - Private properties
@@ -141,6 +148,13 @@ final class ResizeViewController: UIViewController {
                 $0.height.equalTo(50)
             }
         }
+        _scrollView.addSubview(tableButton)
+        tableButton.snp.makeConstraints { make in
+            make.top.equalTo(showNextButton.snp.bottom).offset(16)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(50)
+        }
+        tableButton.addTarget(self, action: #selector(handleTableView), for: .touchUpInside)
     }
     
     // MARK: - Private methods
@@ -169,6 +183,11 @@ final class ResizeViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
+    @objc
+    private func handleTableView() {
+        let viewController = TestTableViewController(initialHeight: currentHeight)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 // MARK: - ScrollableBottomSheetPresentedController
